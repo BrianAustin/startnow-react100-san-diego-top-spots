@@ -27,7 +27,6 @@ class App extends Component {
             <h1 className='display-4'>San Diego Top Spots</h1>
             <p className='lead'>A list of the top 30 places to see in San Diego, California</p>
           </div>
-
             {
               this.state.topspots.map(topspot => (
                 <TopSpot
@@ -37,9 +36,8 @@ class App extends Component {
                   location={topspot.location} />
               ))
             }
-
+          {/* Below commented out code was to initially check that data was coming in from api */}
           {/* <pre>{ JSON.stringify(this.state.topspots, null, 2) }</pre> */}
-
         </div>
 
       </div>  
